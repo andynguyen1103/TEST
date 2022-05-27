@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+ 
+}
+body{
+    background: linear-gradient(#4DAF54,#3D8880);
+    overflow: hidden;
+    padding: 5% 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.card{
+    margin: auto;
+    width: 23%;
+    height: 430px;
+    background-color: #272D40;
+    text-align: center;
+    border-radius: 16px;
+    padding: 0 20px;
+    padding-top: 12px;
+    position:relative;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.card-img{
+    padding-top: 12px;
+    transition: 1s;
+    margin-bottom: 32px;
+}
+.card-img img{
+    width: 80%;
+    height: auto;
+}
+.card-name h3,.card-price h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 16px 0;
+}
+.card-name{
+    transition: 1s;
+}
+.card-name h3{
+    color: #4CAF54;
+}
+.card-price{
+    transition: 1s;
+}
+.card-price h3{
+    color: #FFF;
+
+}
+.card-detail{
+    opacity: 0;
+    margin-top: 32px;
+    transition: 1s;
+
+}
+.card-size{
+    display: flex;
+    
+}
+.card-color{
+    display: flex;
+}
+.card-size,.card-color{
+    margin: 16px 0;
+}
+.card-size h5,.card-color h5{
+    margin: 0 0;
+    margin-right: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+.card-size span{
+    height: 24px;
+    width: 24px;
+    background-color: #DADADA;
+    margin: 0 3px;
+    border-radius: 4px;
+}
+.card-color span{
+    height: 20px;
+    width: 20px;
+    background-color: #DADADA;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.card-color .red{
+    background-color: red;
+}
+.card-color .green{
+    background-color: green;
+}
+.card-color .black{
+    background-color: black;
+}
+.card-button{
+    display: flex;
+}
+.card-button button{
+    height: 32px;
+    width: 90px;
+    font-weight: bold;
+    background-color: #4DAF54;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    margin: 0 8px;
+    margin-bottom: 12px;
+}
+.card:hover .card-img{
+    transform: rotateZ(-15deg) translatey(-70px);
+    
+}
+.card:hover .card-detail{
+    opacity: 1;
+    margin-top: -64px;
+    margin-bottom: 48px;
+    
+}
+.card:hover .card-name{
+    /* position:relative;
+    bottom: 80px;
+    right: 60px; */
+    transform: translatex(-60px) translateY(-80px);
+}
+.card:hover .card-price{
+    /* position:relative;
+    bottom: 80px;
+    right: 130px; */
+    transform: translatex(-132px) translateY(-80px);
+    
+}

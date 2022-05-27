@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(#0C8F46,#43BD6F);
+    padding:10% 0;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #242628;
+    border-radius: 16px;
+    text-align: center;
+    overflow: hidden;
+}
+
+img{
+    height: 100px;
+    width: auto;
+    border: #EC7068 3px solid;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-top: 32px;
+}
+.card-name h3{
+    color: white;
+    margin: 10px 0;
+}
+.card-job h4{
+    color: #EC7068;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.card-icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-button{
+    margin-top: 32px;
+}
+.card-button button{
+    background: transparent;
+    border: #f2726a 1px solid;
+    border-radius: 8px;
+    width: 128px;
+    height: 48px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+.card-button button:hover{
+    background: #f2726a;
+    cursor:pointer;
+}
+
+img:hover{
+    height: 400px;
+    width: auto;
+    border: none;
+    border-radius: 0 ;
+    margin-top: 0;
+    margin-left: -50px;
+}
+
+
